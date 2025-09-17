@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIRX Studio — استوديو التصميم</title>
+
+  <!-- خطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- أيقونات FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root{
+      --bg: #0D0D0D;
+      --card: #0F1724;
+      --muted: #9CA3AF;
+      --text: #E6E6E6;
+      --accent: #3B82F6;
+      --glass: rgba(255,255,255,0.04);
+      --radius: 12px;
+      --insta: #E1306C;
+    }
+    body{margin:0;font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text)}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;transition:0.3s}
+    nav a:hover{color:var(--text)}
+    .hero{display:grid;grid-template-columns:1fr 400px;gap:20px;align-items:center;margin-top:40px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border:none;border-radius:8px;cursor:pointer;text-decoration:none;display:inline-block;transition:0.3s}
+    .btn:hover{opacity:0.9;transform:translateY(-2px)}
+    .btn.ghost{background:transparent;border:1px solid var(--muted);color:var(--text)}
+    .services{display:flex;gap:12px;margin-top:24px}
+    .service{flex:1;background:var(--glass);padding:16px;border-radius:8px;transition:0.3s}
+    .service:hover{transform:translateY(-4px);box-shadow:0 4px 12px rgba(0,0,0,0.4)}
+    .portfolio{margin-top:40px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{background:var(--glass);border-radius:8px;overflow:hidden;min-height:120px;position:relative;transition:0.3s}
+    .card:hover{transform:scale(1.02)}
+    .contact{margin-top:40px;text-align:center}
+    .btn.insta{background:var(--insta);display:inline-flex;align-items:center;gap:8px;font-weight:600}
+    .btn.insta i{font-size:18px}
+    footer{text-align:center;color:var(--muted);margin-top:24px;font-size:14px}
+    @media(max-width:768px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>DIRX Studio</h1>
+      <nav>
+        <a href="#services">الخدمات</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>نحو هوية رقمية تترك أثرًا</h2>
+        <p>نصمم هويات بصرية، واجهات مستخدم، وحلول رقمية تناسب علامتك التجارية.</p>
+        <button class="btn" onclick="location.href='#contact'">اطلب عرض سعر</button>
+        <button class="btn ghost" onclick="location.href='#portfolio'">عرض الأعمال</button>
+        <div class="services" id="services">
+          <div class="service"><h3>تصميم هوية</h3><p>شعارات ودليل براند.</p></div>
+          <div class="service"><h3>UX / UI</h3><p>تصميم واجهات مواقع وتطبيقات.</p></div>
+          <div class="service"><h3>ميديا وموشن</h3><p>فيديوهات تسويقية.</p></div>
+        </div>
+      </div>
+      <div>
+        <img src="images/hero.jpg" alt="مشروع تجريبي" style="width:100%;border-radius:8px">
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h3>أعمالنا</h3>
+      <div class="grid">
+        <div class="card"><img src="images/project1.jpg" alt="عمل 1" style="width:100%"></div>
+        <div class="card"><img src="images/project2.jpg" alt="عمل 2" style="width:100%"></div>
+        <div class="card"><img src="images/project3.jpg" alt="عمل 3" style="width:100%"></div>
+        <div class="card"><img src="images/project4.jpg" alt="عمل 4" style="width:100%"></div>
+        <div class="card"><img src="images/project5.jpg" alt="عمل 5" style="width:100%"></div>
+        <div class="card"><img src="images/project6.jpg" alt="عمل 6" style="width:100%"></div>
+        <div class="card"><img src="images/project7.jpg" alt="عمل 7" style="width:100%"></div>
+        <div class="card"><img src="images/project8.jpg" alt="عمل 8" style="width:100%"></div>
+        <div class="card"><img src="images/project9.jpg" alt="عمل 9" style="width:100%"></div>
+        <div class="card"><img src="images/project10.jpg" alt="عمل 10" style="width:100%"></div>
+        <div class="card"><img src="images/project11.jpg" alt="عمل 11" style="width:100%"></div>
+        <div class="card"><img src="images/project12.jpg" alt="عمل 12" style="width:100%"></div>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h3>تواصل معنا</h3>
+      <p>راسلنا مباشرة عبر إنستجرام:</p>
+      <a href="https://www.instagram.com/dirxstudio.om" target="_blank" class="btn insta">
+        <i class="fab fa-instagram"></i> @dirxstudio.om
+      </a>
+    </section>
+
+    <footer>
+      © <span id="year"></span> DIRX Studio — جميع الحقوق محفوظة
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
