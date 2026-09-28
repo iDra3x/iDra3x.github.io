@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="الأيهم العاصمي — مطور واجهات وتجارب MTA باستخدام HTML وLua وJavaScript.">
+  <meta name="theme-color" content="#0b1020">
+  <title>iDra3x — Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="iDra3x home"><span class="brand-mark">iD</span> iDra3x<span class="accent">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">عني</a><a href="#skills" data-i18n="navSkills">المهارات</a><a href="#projects" data-i18n="navProjects">المشاريع</a><a href="#services" data-i18n="navServices">الخدمات</a><a href="#contact" data-i18n="navContact">التواصل</a>
+      </nav>
+      <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero wrap">
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">مطور واجهات وأنظمة ألعاب</p>
+        <h1 data-i18n="heroTitle">أصنع واجهات وتجارب رقمية <span class="accent">تعمل بوضوح.</span></h1>
+        <p class="lead" data-i18n="heroText">أنا الأيهم العاصمي، مطور من عُمان أهتم ببناء واجهات ويب تفاعلية وأنظمة لسيرفرات MTA باستخدام HTML وCSS وJavaScript وLua.</p>
+        <div class="actions"><a class="button" href="#projects" data-i18n="viewProjects">استعرض المشاريع</a><a class="button secondary" href="#contact" data-i18n="contactMe">تواصل معي</a></div>
+      </div>
+      <div class="hero-panel" aria-hidden="true"><div class="window-bar"><i></i><i></i><i></i><span>portfolio.js</span></div><pre><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"iDra3x"</span>,
+  location: <span class="code-green">"Oman"</span>,
+  focus: [
+    <span class="code-green">"MTA systems"</span>,
+    <span class="code-green">"Web interfaces"</span>
+  ],
+  stack: <span class="code-green">"HTML · CSS · JS · Lua"</span>
+};</pre></div>
+    </section>
+    <section id="about" class="section wrap"><p class="eyebrow">01 / ABOUT</p><h2 data-i18n="aboutTitle">نبذة عني</h2><p class="section-copy" data-i18n="aboutText">أحوّل فكرة النظام إلى تجربة واضحة: من تنظيم الشاشات وتدفق الاستخدام إلى ربط الواجهة بمنطق اللعب. أعمل على مشاريع رول بلاي وأنظمة تفاعلية للويب، مع اهتمام بالتفاصيل وقابلية التطوير.</p></section>
+    <section id="skills" class="section wrap"><p class="eyebrow">02 / STACK</p><h2 data-i18n="skillsTitle">المهارات</h2><div class="grid three">
+      <article class="card"><span class="card-icon">01</span><h3>HTML & CSS</h3><p data-i18n="skillWeb">بناء صفحات متجاوبة، تنسيق واجهات داكنة وتنظيم مكونات الاستخدام.</p></article>
+      <article class="card"><span class="card-icon">02</span><h3>JavaScript</h3><p data-i18n="skillJs">إضافة التفاعل، إدارة حالة الواجهة وربط العناصر بسلوك واضح.</p></article>
+      <article class="card"><span class="card-icon">03</span><h3>Lua / MTA</h3><p data-i18n="skillLua">برمجة أنظمة اللعب وواجهات مرتبطة بموارد MTA.</p></article>
+    </div></section>
+    <section id="projects" class="section wrap"><p class="eyebrow">03 / SELECTED WORK</p><h2 data-i18n="projectsTitle">مشاريع MTA</h2><p class="section-copy" data-i18n="projectsIntro">نماذج من الأفكار والأنظمة التي أعمل عليها؛ الروابط والعروض التفصيلية تُضاف عند نشرها.</p><div class="grid three">
+      <article class="card project"><span class="tag">MTA · Lua</span><h3>Dark Haven Roleplay</h3><p data-i18n="projectDark">تصميم أنظمة رول بلاي تشمل تفاعل اللاعب والواجهات الإدارية وتجربة اللعب.</p></article>
+      <article class="card project"><span class="tag">MTA · UI</span><h3>Prime Life RP</h3><p data-i18n="projectPrime">واجهات وأنظمة لخادم رول بلاي، مع تركيز على HUD والبنك والتفاعل.</p></article>
+      <article class="card project"><span class="tag">MTA · Gameplay</span><h3>THE LAST HOUR</h3><p data-i18n="projectLast">تصور لتجربة نجاة يتضمن المخزون والمهام وعناصر البقاء.</p></article>
+    </div></section>
+    <section id="services" class="section wrap"><p class="eyebrow">04 / SERVICES</p><h2 data-i18n="servicesTitle">ما الذي أقدمه؟</h2><div class="grid three">
+      <article class="card"><h3>HTML / CSS</h3><p data-i18n="serviceHtml">تصميم وتنفيذ واجهات صفحات ولوحات تحكم متجاوبة.</p></article>
+      <article class="card"><h3>Lua / MTA</h3><p data-i18n="serviceLua">تطوير موارد وأنظمة لعب مخصصة وفق متطلبات السيرفر.</p></article>
+      <article class="card"><h3>JavaScript</h3><p data-i18n="serviceJs">برمجة سلوك الواجهة والتفاعلات وربط مكوناتها.</p></article>
+    </div></section>
+    <section id="contact" class="section wrap contact"><p class="eyebrow">05 / CONTACT</p><h2 data-i18n="contactTitle">لنبنِ شيئًا معًا</h2><p data-i18n="contactText">لديك فكرة لواجهة أو نظام MTA؟ تواصل معي عبر الروابط التالية.</p><div class="actions"><a class="button" href="https://github.com/iDra3x" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="button secondary" href="https://www.instagram.com/devorbit.om/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></section>
+  </main>
+  <footer class="wrap footer"><span>© <span id="year"></span> iDra3x</span><a href="#home" data-i18n="backTop">العودة للأعلى ↑</a></footer>
+</body>
+</html>
